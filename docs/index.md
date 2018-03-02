@@ -41,22 +41,20 @@ Finally, call ``notify_header()`` function at the head tag and `notify_footer()`
 
 e.g
 ##### Header
-```
+```blade
 {{ notify_header() }}
 ```
-> **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
 ```php
  {{ notify_header(true) }}
 ```
 
 ##### Footer
-```
+```blade
 {{ notify_footer() }}
 ```
-> **Note:** _If you want to use the included Bootstrap and jQuery files, pass ``true`` as a parameter to the function like this:_
 
-```
+```blade
  {{ notify_footer(true) }}
 ```
 _For these files to be properly loaded in your project, you will need to run this on your terminal:_
