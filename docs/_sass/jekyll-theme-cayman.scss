@@ -214,7 +214,7 @@ a {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem "Operator Mono","Fira Code",Consolas,Monaco,"Andale Mono",monospace;
+    font: 14px "Operator Mono","Fira Code",Consolas,Monaco,"Andale Mono",monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
@@ -225,7 +225,7 @@ a {
     > code {
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 14px !important;
       color: $code-text-color;
       word-break: normal;
       white-space: pre;
@@ -247,7 +247,7 @@ a {
   pre {
     padding: 0.8rem;
     overflow: auto;
-    font-size: 0.9rem;
+    font-size: 14px !important;
     line-height: 1.45;
     border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
@@ -397,5 +397,9 @@ code.highlighter-rouge {
   color: #f4645f;
   padding: 1px 5px;
   border-radius: 3px;
+}
+
+.hljs-emphasis, .hljs-quote, .hljs-string, .hljs-strong, .hljs-template-variable, .hljs-variable {
+  color: #49bb52;
 }
 
