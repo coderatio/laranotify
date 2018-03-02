@@ -13,14 +13,14 @@ It's built on top of the popular Bootstrap notify plugin by [Robert McIntosh](ht
 
  > When published, the sample template will be copied to laranotify directory views/vendor folder.
  
-### Provider
+# Provider
 The package provider is auto-discovered if you are using Laravel 5.5 and above. If your version is less than 5.5, kindly add this line to your ``config/app.php`` file under providers array.
 
 ```php
 // Laranotify provider.
 Coderatio\Laranotify\LaranotifyServiceProvider::class,
 ```
-### Aliases (Facades)
+# Aliases (Facades)
 The package comes with two facades. If you want to use them, kindly the code below to your ``config/app.php`` file under aliases array.
 
 ```php
@@ -40,7 +40,7 @@ php artisan vendor:publish --tag=laranotify-required
 Finally, call ``notify_header()`` function at the head tag and `notify_footer()` after your bootstrap JavaScript file to register laranotify assets in your project. This step is required.
 
 e.g
-##### Header
+### Header
 ```php
 notify_header();
 ```
@@ -50,7 +50,7 @@ notify_header();
 notify_header(true);
 ```
 
-##### Footer
+### Footer
 ```php
 notify_footer();
 ```
