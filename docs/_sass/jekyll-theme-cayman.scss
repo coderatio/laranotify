@@ -183,7 +183,7 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     //font-family: "Whitney A","Whitney B",sans-serif;
-    color: $section-headings-color;
+    color: #525252; //$section-headings-color;
   }
 
   p {
@@ -212,7 +212,8 @@ a {
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    //border: solid 1px $border-color;
+    box-shadow: 0 1px 1px rgba(0,0,0,.125);
     border-radius: 0.3rem;
 
     > code {
