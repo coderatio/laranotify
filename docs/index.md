@@ -42,11 +42,11 @@ Finally, call ``notify_header()`` function at the head tag and `notify_footer()`
 e.g
 ##### Header
 ```php
-notify_header()
+notify_header();
 ```
 > **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
-```
+```php
 notify_header(true);
 ```
 
