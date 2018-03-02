@@ -1,6 +1,6 @@
 {
   "name": "coderatio/laranotify",
-  "description": "A feature-rich laravel package that turns bootstrap notify jQuery plugin to a dynamic notification, alert and blockable.",
+  "description": "A feature-rich laravel package that turns bootstrap notify jQuery plugin to dynamic notifications, alerts and blockables.",
   "license": "MIT",
   "keywords": ["coderatio", "code9ja", "laravel", "lara", "larnotify", "laravel notification", "laravel framework", "laranotify", "notify", "notifier", "bootstrap notify"],
   "type": "laravel-package",
