@@ -9,31 +9,114 @@ Laranotify is the most advanced and recommended laravel package that redefines t
 
 It's built on top of the popular Bootstrap notify plugin by [Robert McIntosh](https://github.com/mouse0270). Every method found there in the plugin is included in this awesome package. The package has added the ability to create custom templates apart from the type provided by Robert. However, customizing the template, gives your users different looks. Read about template customization under templates section.
 
-> **Note:** _To start building your custom template, it’s advisable to publish a sample to your view directory. [Learn about this here](#publishing)_
+> **Note:** _To start building your custom template, it’s advisable to publish a sample to your view directory. [Learn more about this here](#publishing)_
 
  > When published, the sample template will be copied to laranotify directory views/vendor folder.
-
-## [](#header-2)Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### [](#header-3)Header 3
+ 
+### Provider
+The package provider is auto-discovered if you are using Laravel 5.5 and above. If your version is less than 5.5, kindly add this line to your ``config/app.php`` file under providers array.
 
 ```php
-// Adding providers.
-"providers" => [
-  Coderatio\Laranotify\LaranotifyServiceProvider::class,
-]
+// Laranotify provider.
+Coderatio\Laranotify\LaranotifyServiceProvider::class,
+```
+### Aliases (Facades)
+The package comes with two facades. If you want to use them, kindly the code below to your ``config/app.php`` file under aliases array.
+
+```php
+// Laranotify aliases
+'Notify' => Coderatio\Laranotify\Facades\Notify::class,
+'Laranotify' => Coderatio\Laranotify\Facades\Laranotify::class,
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+# Publishing
+The package has configuration and assets files that needs to be published to your app public directory. To publish these files, run;
+
+```vim 
+php artisan vendor:publish --tag=laranotify-required
+``` 
+on your command line.
+
+# Header and footer
+Finally, call ``notify_header()`` function at the head tag and `notify_footer()` after your bootstrap JavaScript file to register laranotify assets in your project. This step is required.
+
+e.g
+##### Header
+```html
+<head>
+{{ notify_header() }}
+
+</head>
 ```
+> **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
+
+```blade
+ {{ notify_header(true) }}
+```
+##### Footer
+```html
+{{ notify_footer() }}
+
+</body>
+```
+> **Note:** _If you want to use the included Bootstrap and jQuery files, pass ``true`` as a parameter to the function like this:_
+```blade
+ {{ notify_footer(true) }}
+```
+
+_For these files to be properly loaded in your project, you will need to run ``php artisan vendor:publish --tag=laranotify-foundations`` on your command line or prompt._
+
+# Usage via Facades
+```php
+Notify::message ('I am a simple notification from laranotify');
+// You've just created your first notification.
+```
+ 
+ You can then chain other methods to it. For example, if i want to change the delay period, i will do this:
+  ```php
+ Notify::success('I am a simple notification from laranotify')->delay(6000); 
+ // 6000 = 6secs.
+ ```
+We included two facades for conveniences. You can choose to use either of them.
+# Usage via helpers
+There are two helper functions provided to help you get started out of the box. The helper functions return the instance of the package service class.
+
+```php
+/**
+* @param (string) $message
+*/
+notify();
+```
+
+This helper takes only one argument which is your message. You may use the message method or notify types methods e.g error, info e.t.c by chaining to the helper function and many other once.
+
+```php
+/**
+* @param (string) $message
+*/
+laranotify();
+// Same as notify helper above. Take a look below.
+````
+
+```php
+notify('Hello World'); 
+// OR
+laranotify('Hello World');
+```
+
+Will display ``Hello World`` on screen with default bootstrap info alert type.
+
+To display a different type of alert , say error alert, chain error method to a helper or type method and pass any bootstrap alert class or your custom class to it. E.g
+
+```php
+notify()->error('There was an error!'); 
+ // OR
+notify('There was an error!')->type('danger');
+```
+
+## Attributions
+We deeply want to appreciate the creator of Bootstrap notify or growl plugin [Robert McIntosh](https://github.com/mouse0270). Without which, there wouldn't have been this awesome package.
+
 
 #### [](#header-4)Header 4
 
