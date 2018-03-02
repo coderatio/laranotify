@@ -44,20 +44,22 @@ e.g
 ```blade
 {{ notify_header() }}
 ```
+> **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
 ```php
  {{ notify_header(true) }}
 ```
 
 ##### Footer
-```blade
+```php
 {{ notify_footer() }}
 ```
+> **Note:** _If you want to use the included Bootstrap and jQuery files, pass ``true`` as a parameter to the function like this:_
 
-```blade
- {{ notify_footer(true) }}
+```php
+ notify_footer(true)
 ```
-_For these files to be properly loaded in your project, you will need to run this on your terminal:_
+> **Note:** _For these files to be properly loaded in your project, you will need to run this on your terminal:_
 ```vim
 php artisan vendor:publish --tag=laranotify-foundations
 ```
