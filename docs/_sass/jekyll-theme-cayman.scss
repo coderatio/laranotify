@@ -271,10 +271,23 @@ a {
   }
 
   blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+  }
+
+  blockquote {
+    //padding: 0 1rem;
+    //margin-left: 0;
+    //color: $blockquote-text-color;
+    color: #ffffff;
+    margin: 10px 0 20px;
+    padding: 10px 15px;
+    //border-left: 0.3rem solid $border-color;
+    background: rgba(103,58,183,.62);
+    border-radius: 3px;
 
     > :first-child {
       margin-top: 15px;
@@ -282,6 +295,9 @@ a {
 
     > :last-child {
       margin-bottom: 15px;
+    }
+    > a {
+      color: #ffffff;
     }
   }
 
