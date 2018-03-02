@@ -41,23 +41,25 @@ Finally, call ``notify_header()`` function at the head tag and `notify_footer()`
 
 e.g
 ##### Header
-```html
+```blade
 <head>
 {{ notify_header() }}
 </head>
 ```
 > **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
-```php
+```blade
  {{ notify_header(true) }}
 ```
+
 ##### Footer
-```html
+```blade
 {{ notify_footer() }}
 </body>
 ```
 > **Note:** _If you want to use the included Bootstrap and jQuery files, pass ``true`` as a parameter to the function like this:_
-```php
+
+```blade
  {{ notify_footer(true) }}
 ```
 _For these files to be properly loaded in your project, you will need to run ``php artisan vendor:publish --tag=laranotify-foundations`` on your command line or prompt._
