@@ -5,11 +5,13 @@ layout: default
 
 # [](#introduction)Introduction
 
-Laranotify is the most advanced and recommended laravel package that redefines the way alert messages or notifications are displayed on screen. This is built with fluency in mind--meaning, you can chain as many methods as you want.
+Laranotify is the most advanced and recommended laravel package that redefines the way alert messages or notifications are displayed on screen. 
 
-It's built on top of Bootstrap notify or growl plugin. Every method found there in is included in the package. It therefore, requires you to have bootstrap installed on your project. However, customizing the template, gives your users different looks. Read about template customization under templates section.
+It's built on top of the popular Bootstrap notify plugin by [Robert McIntosh](https://github.com/mouse0270). Every method found there in the plugin is included in this awesome package. The package has added the ability to create custom templates apart from the type provided by Robert. However, customizing the template, gives your users different looks. Read about template customization under templates section.
 
-> **Note:** To start building your custom template, it’s advisable to publish a sample to your view directory. When published, the sample template will be copied to laranotify directory inside your views folder.
+> **Note:** _To start building your custom template, it’s advisable to publish a sample to your view directory. [Learn about this here](#publishing)_
+
+ > When published, the sample template will be copied to laranotify directory views/vendor folder.
 
 ## [](#header-2)Header 2
 
