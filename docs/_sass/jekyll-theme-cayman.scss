@@ -115,25 +115,27 @@ a {
   margin-bottom: 0.1rem;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 4.5rem;
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
   }
 }
 
 .project-tagline {
-  margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7;
+  display: block;
+  margin: 0 auto;
 
   @include large {
     font-size: 1.25rem;
+    width: 60%;
   }
 
   @include medium {
@@ -143,6 +145,10 @@ a {
   @include small {
     font-size: 1rem;
   }
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
 }
 
 .main-content {
@@ -276,6 +282,7 @@ a {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 40px;
     -webkit-margin-end: 40px;
+    border-left: 0 solid !important;
   }
 
   blockquote {
@@ -285,6 +292,7 @@ a {
     color: #ffffff;
     margin: 10px 0 20px;
     padding: 10px 15px;
+    font-style: normal;
     //border-left: 0.3rem solid $border-color;
     background: rgba(103,58,183,.62);
     border-radius: 3px;
@@ -296,9 +304,18 @@ a {
     > :last-child {
       margin-bottom: 15px;
     }
-    > a {
+    a {
       color: #ffffff;
     }
+  }
+
+  blockquote a,
+  blockquote p,
+  blockquote a,
+  blockquote em,
+  blockquote b,
+  blockquote i {
+    color: #ffffff;
   }
 
   table {
