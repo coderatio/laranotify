@@ -9,22 +9,30 @@ Laranotify is the most advanced and recommended laravel package that redefines t
 
 It's built on top of the popular Bootstrap notify plugin by [Robert McIntosh](https://github.com/mouse0270). Every method found there in the plugin is included in this awesome package. The package has added the ability to create custom templates apart from the type provided by Robert. However, customizing the template, gives your users different looks. Read about template customization under templates section.
 
-> **Note:** _To start building your custom template, it’s advisable to publish a sample to your view directory. [Learn more about this here](#publishing)_
+> **Note:** _To start building your custom templates, it’s advisable to publish the samples provided by the package to your view directory. [Learn more about this here](#publishing)_
 
- > When published, the sample template will be copied to laranotify directory views/vendor folder.
+ > When published, the sample templates will be copied to `views/vendor/vendor` folder.
  
 # Provider
 The package provider is auto-discovered if you are using Laravel 5.5 and above. If your version is less than 5.5, kindly add this line to your ``config/app.php`` file under providers array.
 
 ```php
-// Laranotify provider.
+/**
+* Laranotify provider.
+*
+*/
+
 Coderatio\Laranotify\LaranotifyServiceProvider::class,
 ```
 # Aliases (Facades)
 The package comes with two facades. If you want to use them, kindly the code below to your ``config/app.php`` file under aliases array.
 
 ```php
-// Laranotify aliases
+/**
+* Laranotify aliases.
+*
+*/
+
 'Notify' => Coderatio\Laranotify\Facades\Notify::class,
 'Laranotify' => Coderatio\Laranotify\Facades\Laranotify::class,
 ```
@@ -44,7 +52,7 @@ e.g
 ```php
 notify_header();
 ```
-> **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
+> <i class="l sl-icon-warning"></i> **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
 ```php
 notify_header(true);
