@@ -1,0 +1,39 @@
+{
+  "name": "coderatio/laranotify",
+  "description": "The most advanced laravel package to dynamically display beautiful and elegant alert messages, blockables and notifications on screen. This is built with fluency in mind--meaning, you can chain as many methods as you want. Lots of functionalities are available.",
+  "license": "MIT",
+  "keywords": ["coderatio", "code9ja", "laravel", "lara", "larnotify", "laravel notification", "laravel framework", "laranotify", "notify", "notifier", "bootstrap notify"],
+  "type": "laravel-package",
+
+  "authors": [
+    {
+      "name": "Josiah Ovye Yahaya",
+      "email": "josiahoyahaya@gmail.com"
+    }
+  ],
+
+  "minimum-stability": "dev",
+
+  "require": {
+    "php": ">=5.6.0",
+    "illuminate/support": ">=4.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Coderatio\\Laranotify\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Coderatio\\Laranotify\\LaranotifyServiceProvider"
+      ],
+      "aliases": {
+        "Notify": "Coderatio\\Laranotify\\Facades\\Notify",
+        "Laranotify": "Coderatio\\Laranotify\\Facades\\Laranotify"
+      }
+    }
+  }
+}
