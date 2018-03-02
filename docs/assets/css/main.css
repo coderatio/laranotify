@@ -146,7 +146,8 @@ h6 {
 }
 
 p {
-    font-size: .875rem
+    font-size: 1.04rem;
+    color: #6e6a6c;
 }
 
 p,
@@ -14924,8 +14925,8 @@ textarea.c-input {
 
 /* Custom */
 code.highlighter-rouge {
-    color: #dc5760;
-    background: #f8e2e9;
+    color: #ca5b60;
+    background: #f8ecf3;
 }
 
 /*# sourceMappingURL=main.css.map */
