@@ -15,7 +15,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name" style="text-transform: capitalize; color: #fff;">{{ site.github.repository_name }}</h1>
-      <h2 class="project-tagline" style="color: #ffffff;">{{ site.github.project_tagline }}</h2>
+      <!--<h2 class="project-tagline" style="color: #ffffff;">{{ site.github.project_tagline }}</h2>-->
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
@@ -29,9 +29,10 @@
         <div class="container">
             <div class="row u-mt-xlarge">
                 <div class="col-md-8 u-mr-auto u-ml-auto u-text-center">
-                    <img class="u-mb-small" src="img/logo.svg" style="width: 60px;" alt="Dashboard UI Kit">
-                    <h1>Welcome to Dashboard documentation</h1>
-                    <p class="u-text-mute u-text-large u-mb-large">Dashboard UI Kit is a simple, powerful UI framework for building responsive web interfaces. This documentaion will help you get started with Dashboard by getting familiar with things like folder strucutre, installation and build system then a guide for all UI-Kit components, objects and utilities.</p>
+                    <h1>Documentation</h1>
+                    <p class="u-text-mute u-text-large u-mb-large">
+                        <h2 class="project-tagline" style="color: #ffffff;">{{ site.github.project_tagline }}</h2>
+                    </p>
                 </div>
             </div>
 
@@ -60,7 +61,7 @@
             </div>
             <!--Components-->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-6 col-lg-6">
                     <a class="c-intro-card c-card u-p-medium u-text-center u-mb-medium" href="getting-started/index.html" title="Getting Started">
                         <span class="c-intro-card__icon">
                             <img src="img/getting-started.svg" alt="">
@@ -94,6 +95,7 @@
                 </div>
             </div>
         </div>
+
       {{ content }}
 
       <footer class="site-footer">
