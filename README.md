@@ -1,7 +1,9 @@
 # Laranotify
 <p class="center">
-<a href="https://packagist.org/packages/coderatio/laranotify"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a hre="https://poser.pugx.org/coderatio/laranotify/v/stable"><img src="https://poser.pugx.org/coderatio/laranotify/v/stable"></a>
 <a href="https://poser.pugx.org/coderatio/laranotify/downloads"><img src="https://poser.pugx.org/coderatio/laranotify/downloads"></a>
+<a href="https://packagist.org/packages/coderatio/laranotify"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://poser.pugx.org/coderatio/laranotify/v/unstable"><img src="https://poser.pugx.org/coderatio/laranotify/v/unstable"></a>
 </p>
 The most advanced laravel package to dynamically display beautiful and elegant alert messages, blockables and notifications on screen. This is built with fluency in mind--meaning, you can chain as many methods as you want. Lots of functionalities are available. <a href="#demos">See demos</a>
 
@@ -127,7 +129,7 @@ notify('There was an error!')->type('danger');
 ## Attributions
 We deeply want to appreciate the creator of Bootstrap notify or growl plugin [Robert McIntosh](https://github.com/mouse0270). Without which, there wouldn't have been this awesome package.
 ## Documentation
-Full documentation can be found <a href="">here</a>.
+Full documentation can be found <a href="https://coderatio.github.io/laranotify/">here</a>.
 ## Copyright & Licence
 The MIT License (MIT) Copyright (c) 2018 Coderatio
 
