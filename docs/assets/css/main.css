@@ -9998,9 +9998,9 @@ a.fc-more:hover {
     padding: .59375rem .9375rem;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 1px solid #dfe3e9;
+    border: 1px solid #e9dfe4;
     border-radius: 4px;
-    color: #354052;
+    color: #413f52;
     font-size: .875rem;
     font-weight: 400;
     resize: none
@@ -10041,7 +10041,7 @@ a.fc-more:hover {
 }
 
 .c-input:focus {
-    border-color: #2ea1f8;
+    border-color: #ca5b60;
     outline: none
 }
 
@@ -14919,7 +14919,7 @@ textarea.c-input {
 
 .c-search-list__link:hover {
     background-color: #f2f4f7;
-    color: #2ea1f8;
+    color: #dc5760;
     text-decoration: none
 }
 
