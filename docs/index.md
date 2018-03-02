@@ -30,12 +30,11 @@ The package comes with two facades. If you want to use them, kindly the code bel
 ```
 
 # Publishing
-The package has configuration and assets files that needs to be published to your app public directory. To publish these files, run;
+The package has configuration and assets files that needs to be published to your app public directory. To publish these files, run this on your terminal:
 
 ```vim 
 php artisan vendor:publish --tag=laranotify-required
 ``` 
-on your command line.
 
 # Header and footer
 Finally, call ``notify_header()`` function at the head tag and `notify_footer()` after your bootstrap JavaScript file to register laranotify assets in your project. This step is required.
@@ -45,25 +44,22 @@ e.g
 ```html
 <head>
 {{ notify_header() }}
-
 </head>
 ```
 > **Note:** _If you want to use the included Bootstrap css file, pass ``true`` as a parameter to the function like this:_
 
-```blade
+```php
  {{ notify_header(true) }}
 ```
 ##### Footer
 ```html
 {{ notify_footer() }}
-
 </body>
 ```
 > **Note:** _If you want to use the included Bootstrap and jQuery files, pass ``true`` as a parameter to the function like this:_
-```blade
+```php
  {{ notify_footer(true) }}
 ```
-
 _For these files to be properly loaded in your project, you will need to run ``php artisan vendor:publish --tag=laranotify-foundations`` on your command line or prompt._
 
 # Usage via Facades
@@ -118,7 +114,7 @@ notify('There was an error!')->type('danger');
 We deeply want to appreciate the creator of Bootstrap notify or growl plugin [Robert McIntosh](https://github.com/mouse0270). Without which, there wouldn't have been this awesome package.
 
 
-#### [](#header-4)Header 4
+### Components
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
