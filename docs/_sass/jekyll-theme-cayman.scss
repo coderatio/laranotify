@@ -314,6 +314,8 @@ a {
   blockquote a,
   blockquote em,
   blockquote b,
+  blockquote strong,
+  blockquote strike,
   blockquote i {
     color: #ffffff;
   }
@@ -388,3 +390,4 @@ a {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
