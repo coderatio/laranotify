@@ -26,28 +26,72 @@
     </section>
 
     <section class="main-content">
-        <div class="o-page__sidebar js-page-sidebar">
-            <div class="c-sidebar c-sidebar--light u-border-right">
+        <div class="container">
+            <div class="row u-mt-xlarge">
+                <div class="col-md-8 u-mr-auto u-ml-auto u-text-center">
+                    <img class="u-mb-small" src="img/logo.svg" style="width: 60px;" alt="Dashboard UI Kit">
+                    <h1>Welcome to Dashboard documentation</h1>
+                    <p class="u-text-mute u-text-large u-mb-large">Dashboard UI Kit is a simple, powerful UI framework for building responsive web interfaces. This documentaion will help you get started with Dashboard by getting familiar with things like folder strucutre, installation and build system then a guide for all UI-Kit components, objects and utilities.</p>
+                </div>
+            </div>
 
-                <a class="c-sidebar__brand u-pl-medium" href="../index.html">
-                    <span class="u-text-dark">
-                        Documentation
-                    </span>
-                </a>
+            <div class="row u-mb-large">
+                <div class="col-md-7 u-mr-auto u-ml-auto">
+                    <div class="c-search-docs">
+                        <form id="form" class="c-field has-icon-right" action="#">
+                            <span class="c-field__icon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input class="c-input c-intro__search" type="text" placeholder="Quick Search for Something like: Button">
+                        </form>
+                        <ul id="list" class="c-search-list">
+                            <li class="c-search-list__item">
+                                <a class="c-search-list__link" href="getting-started/index.html">Getting Started (Overview)</a>
+                            </li>
+                            <li class="c-search-list__item">
+                                <a class="c-search-list__link" href="getting-started/installation.html">Installation</a>
+                            </li>
+                            <li class="c-search-list__item">
+                                <a class="c-search-list__link is-active" href="getting-started/build-system.html">Build System (Gulp)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Components-->
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="c-intro-card c-card u-p-medium u-text-center u-mb-medium" href="getting-started/index.html" title="Getting Started">
+                        <span class="c-intro-card__icon">
+                            <img src="img/getting-started.svg" alt="">
+                        </span>
 
-                <h4 class="c-sidebar__title u-text-bold u-text-small">Getting Started</h4>
+                        <h3>Getting Started</h3>
+                        <p class="u-text-mute">Take a look on what's incluced and learn how to get up and running with Dashboard UI Kit</p>
+                    </a>
+                </div>
 
-                <ul class="c-sidebar__list">
-                    <li class="c-sidebar__item">
-                        <a class="c-sidebar__link is-active" href="index.html">Overview</a>
-                    </li>
-                    <li class="c-sidebar__item">
-                        <a class="c-sidebar__link" href="installation.html">Installation</a>
-                    </li>
-                    <li class="c-sidebar__item">
-                        <a class="c-sidebar__link" href="build-system.html">Build System (Gulp)</a>
-                    </li>
-                </ul>
+                <div class="col-md-4">
+                    <a class="c-intro-card c-card u-p-medium u-text-center u-mb-medium" href="objects/index.html">
+                        <span class="c-intro-card__icon">
+                            <img src="img/objects.svg" alt="">
+                        </span>
+
+                        <h3>Objects</h3>
+                        <p class="u-text-mute">Abstractions, and common design patterns responsible for layout-specific things.</p>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="c-intro-card c-card u-p-medium u-text-center u-mb-medium" href="components/index.html">
+                        <span class="c-intro-card__icon">
+                            <img src="img/components.svg" alt="">
+                        </span>
+
+                        <h3>Components</h3>
+                        <p class="u-text-mute">UI-Kit components like buttons & alerts and admin/dashboard components like sidebar.</p>
+                    </a>
+                </div>
             </div>
         </div>
       {{ content }}
