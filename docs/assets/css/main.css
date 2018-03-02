@@ -14921,4 +14921,10 @@ textarea.c-input {
     text-decoration: none
 }
 
+/* Custom */
+code.highlighter-rouge {
+    color: #cb0000;
+    background: #f3cdd5;
+}
+
 /*# sourceMappingURL=main.css.map */

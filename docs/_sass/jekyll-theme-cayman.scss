@@ -27,7 +27,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
@@ -191,11 +191,16 @@ a {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    //font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
+    font-family: "Operator Mono","Fira Code",Consolas,Monaco,"Andale Mono",monospace;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    direction: ltr;
   }
 
   pre {
