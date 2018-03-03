@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('notify', function ()
 {
     Notify::info('Please provide your password to continue.')
-        ->title('Last step required')->allowDismiss(false)->align('middle')->asModal();
+        ->title('Last step required')->allowDismiss(false)
+        ->align('bottom-right')->asModal();
 
     return view('frontend/wrapper', ['body' => 'notify::demo']);
 });
