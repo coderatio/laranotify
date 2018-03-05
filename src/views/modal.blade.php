@@ -4,7 +4,7 @@
             <div class='modal-dialog' role='document'>
                 <a  aria-hidden='true' class='ln-notify-close' data-dismiss='modal' data-notify='dismiss'><i class='sl sl-icon-close'></i></a>
                 <div class="modal-header ln-modal-header" data-notify='title'>
-                    <h4 class="p-0 text u-text-bold">{1}</h4>
+                    <h4 class="p-0 text u-text-bold" id="title">{1}</h4>
                 </div>
                 <div class='modal-body ln-modal-body'>
                     <form action="">
