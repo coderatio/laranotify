@@ -124,6 +124,7 @@ notify()->error('There was an error!');
 notify('There was an error!')->type('danger');
 ```
 ## Demos
+### Modal type notification.
 <img src="https://github.com/coderatio/laranotify/blob/master/src/public/img/blockable-icon.jpg"/>
 
 ## Attributions
